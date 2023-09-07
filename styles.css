@@ -17,10 +17,7 @@ nav ul {
 .nav-button {
     font-family: Roboto, Arial;
     font-weight: 500;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 1.5vh 4vw;
     border-radius: 20px;
     background-color: rgb(255, 159, 127);
     border: none;
@@ -34,6 +31,7 @@ nav ul {
     cursor: pointer;
 
 }
+
 
 @keyframes nav-anim {
     
@@ -85,21 +83,54 @@ nav ul {
 
 .article-div {
     width:100%;
-    height:200px;
-    margin-top: 10px;
+    height:80px;
+    margin-top: 20px;
+    background-color:rgb(252, 179, 155);
+    border-radius: 30px;
+    transition: transform 0.3 ease;
 }
 
-article p {
+#first-row-text {
+    font-size: 40px;
+    font-weight: 500;
+    text-align: center;
+}
+
+@media (max-width: 1600px) {
+    #first-row-text {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 1000px) {
+    #first-row-text {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    #first-row-text {
+        font-size: 12px;
+    }
+}
+
+article p { 
     font-size: 30px;
+    font-weight: 500;
     text-align: center;
     transition: transform 0.3 ease;
 }
 
-
+ 
 article img {
     transition: transform 0.3 ease;
 }
 
-article img:hover, article p:hover {
+article img:hover {
+    transform: scale(1.03);
+    opacity: 0.8;
+}
+
+article p:hover, .article-div:hover {
     transform: scale(1.03);
 }
