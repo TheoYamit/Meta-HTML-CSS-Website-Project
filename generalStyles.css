@@ -14,6 +14,17 @@ img {
     border-radius: 50px;
 }
 
+h1 {
+    font-family: Roboto;
+    font-size: 40px;
+    text-align: center;
+}
+
+h2 {
+    font-family: Roboto;
+    text-align: center;
+}
+
 
 body {
     display: grid;

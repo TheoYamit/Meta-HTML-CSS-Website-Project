@@ -157,6 +157,7 @@ article > div > p, .article-div:hover {
     align-items: center;
 }
 
+
 .footer-logo-img1 {
     width: 5vw;
     height: auto;
@@ -179,4 +180,8 @@ article > div > p, .article-div:hover {
     bottom: 0;
     font-size: 20px;
 
+}
+
+.about-images {
+    width: 600px;
 }
