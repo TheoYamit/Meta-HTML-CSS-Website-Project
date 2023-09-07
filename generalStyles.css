@@ -9,10 +9,10 @@ p {
 }
 
 img {
-    width: 460px;
+    max-width: 100%;
     height: auto;
+    border-radius: 50px;
 }
-
 
 body {
     display: grid;
@@ -21,7 +21,7 @@ body {
     background-color: rgb(255, 253, 208);
 }
 
-header {
+header { 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -35,6 +35,7 @@ nav {
 main {
     display: grid;
     grid-template-rows: auto auto;
+    grid-template-columns: 100%;
 }
 
 .full-width {
@@ -45,9 +46,8 @@ main {
 
 .three-columns {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     column-gap: 20px;
-    border-radius: 20px;
 
 }
 
