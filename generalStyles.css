@@ -3,10 +3,33 @@
     padding: 0;
 }
 
+p {
+    font-family: Roboto Mono;
+    font-size: 40px;
+}
+
+img {
+    width: 460px;
+    height: auto;
+}
+
+
 body {
     display: grid;
     grid-template-rows: auto 1fr auto;
     grid-template-columns: 100%;
+    background-color: rgb(255, 253, 208);
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 253, 208);
+}
+
+nav {
+    background-color: rgb(255, 253, 208);
 }
 
 main {
@@ -16,14 +39,15 @@ main {
 
 .full-width {
     grid-column: 1 / -1;
-    background-color: lightblue;
-    
+    background-color: rgb(251, 136, 65);
+    margin-bottom: 10px;
 }
 
 .three-columns {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 20px;
+    border-radius: 20px;
 
 }
 

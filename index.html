@@ -2,25 +2,43 @@
 <html>
     <head>
         <link rel="stylesheet" href="generalStyles.css"> 
+        <link rel="stylesheet" href="styles.css"> 
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&family=Roboto:ital,wght@0,400;0,500;1,700&display=swap" rel="stylesheet">
     </head>
     <body>
-        <header>Header</header>
-        <nav>Navigation</nav>
+        <header>
+            <img class="header-logo-img" src="hairlogos/Artboard 19.png">
+        </header>
+        <nav>
+            <ul>
+                <button onclick="window.location.href='index.html'"class="nav-button">Home</button>
+                <button class="nav-button">About</button>
+                <button class="nav-button">Locations</button>
+                <button class="nav-button">Contact</button>
+                <button class="nav-button">Services</button>
+            </ul>
+        </nav>
         <main>
-            <section class="full-width">
-                <article>
-                    First article
+            <section class="section1 full-width">
+                <article class="first-article">
+                    <p class="type-animation">Cut, Style, Color, Perfect - We'll make you look your best.</p>
                 </article>
             </section>
-            <section class="three-columns">
-                <article style="background-color: lightpink;">
-                    Second article
+            <section class="section2 three-columns">
+                <article style="background-color: rgb(255, 159, 127);">
+                    <img src="hairsalonpics/hairpic.jpg" class="center-image">
+                    <p>Transform your look - Hair cuts, styles and colors for a new you.</p>
                 </article>
-                <article style="background-color: lightpink;">
-                    Second article
+                <article style="background-color: rgb(255, 159, 127);">
+                    <img src="hairsalonpics/nailspic.jpg" class="center-image">
                 </article>
-                <article style="background-color: lightpink;">
-                    Second article
+                <article style="background-color: rgb(255, 159, 127);">
+                    <img src="hairsalonpics/makeuppic.jpg" class="center-image">
                 </article>
             </section>
         </main>
