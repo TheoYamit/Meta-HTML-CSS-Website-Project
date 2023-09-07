@@ -8,6 +8,17 @@ p {
     font-size: 30px;
 }
 
+a {
+    text-decoration: none;
+    color: purple;
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    display: flex;
+}
+
 img {
     max-width: 100%;
     height: auto;
@@ -23,6 +34,19 @@ h1 {
 h2 {
     font-family: Roboto;
     text-align: center;
+}
+
+ul {
+    text-align: center;
+}
+
+li {
+    font-family: Roboto;
+    font-size: 40px;
+}
+
+li::before {
+    content: "✂️";     
 }
 
 
