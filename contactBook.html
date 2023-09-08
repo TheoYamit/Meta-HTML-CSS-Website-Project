@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="generalStyles.css"> 
+        <link rel="stylesheet" href="styles.css"> 
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&family=Roboto:ital,wght@0,400;0,500;1,700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <img class="header-logo-img" src="hairlogos/Artboard 19.png">
+        </header>
+        <nav>
+            <ul>
+                <button onclick="window.location.href='index.html'"class="nav-button">Home</button>
+                <button onclick="window.location.href='about.html'"class="nav-button">About</button>
+                <button onclick="window.location.href='locations.html'"class="nav-button">Locations</button>
+                <button onclick="window.location.href='contactBook.html'"class="nav-button">Contact/Book</button>
+                <button class="nav-button">Services</button>
+                <button class="nav-button">Videos</button>
+            </ul>
+        </nav>
+        <main style="margin-bottom: 95px;">
+            <section style="margin-top: 20px; margin-bottom: 40px;">
+                 <h1> For booking/queries by email or phone please refer to the information below:</h1>
+                 <h2> Email: hairday@gmail.com</h2>
+                 <h2> Phone: 299-299-2999</h2>
+            </section>
+            <section>
+                <h1 style="margin-bottom: 20px;">Booking Online</h1>
+                <!--Using GET method instead of POST method beacuse can't load success.html without setting up the POST method. Otherwise, I would've used POST--> 
+                <form method="GET" action="success.html"> 
+                    <div class="adjust-div">
+                        <label for="full-name">Full Name</label>
+                        <input type="text" id="full-name" name="full-name" required>
+                    </div>
+
+                    <div class="adjust-div">
+                        <label for="date-appointment">Date of Appointment</label>
+                        <input type="date" id="date-appointment" name="date-appointment" required>
+                    </div> 
+                    
+                    <div class="adjust-div">
+                        <label style="margin-right: 15px;" for="radio-service">Styling</label>
+                        <input style="margin-right: 40px;" type="radio" id="radio-service" name="radio-service" required>
+                        <label style="margin-right: 15px;" for="radio-service">Coloring</label>
+                        <input style="margin-right: 40px;" type="radio" id="radio-service" name="radio-service" required>
+                        <label style="margin-right: 15px;" for="radio-service">Manicuring</label>
+                        <input style="margin-right: 40px;" type="radio" id="radio-service" name="radio-service" required>
+                        <label style="margin-right: 15px;" style="margin-right: 5px;"for="radio-service">Make-up</label>
+                        <input style="margin-right: 40px;" type="radio" id="radio-service" name="radio-service" required>
+                    </div>
+                    <div class="adjust-div">
+                        <button type="submit" id="submit-button" name="sumbit-button">Book now</button>
+                    </div>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-section1">
+                <img class="footer-logo-img1" src="hairlogos/Artboard 1.png">
+                <img class="footer-logo-img2" src="hairlogos/Artboard 22.png">
+            </div>
+            <div class="footer-section2">
+                <p>&copy; 2023 Hair Day: All Rights Reserved</p>
+            </div>
+        </footer>
+
+    </body>
+</html>
